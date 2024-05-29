@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOJAS GAMES POINT</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+        
+        header h1 {
+            color: rgb(199, 2, 77);
+        }
+        
+        #cabecalho {
+            background-color: rgb(109, 136, 253);
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+
+        .container img {
+            height: 400px;
+            position: static;
+        }
+
+        .conteudo h2{
+            margin-top: 100px;
+            color: rgb(109, 136, 253);
+            font-size: 40px;
+        }
+
+        .conteudo p {
+            font-size: 20px;
+            color: black;
+        }
+
+        .row {
+            padding: 100px;
+            justify-content: space-between;
+            margin-right: 100px;
+        }
+
+        .card {
+            height: 300px;
+            width: 300px;
+        }
+
+        #produtos {
+            text-align: center;
+            margin-top: 100px;
+            color: rgb(109, 136, 253);
+            font-size: 40px;
+        }
+
+        .card-title {
+            margin-top: 100px;
+            font-size: 30px;
+            margin-top: 100px;
+            display: inline-block;
+            color: rgb(255, 255, 255);
+            -webkit-text-stroke: 1px black;
+        }
+
+
+        @media screen and (max-width: 896px) {
+            .container {
+                display: block;
+                
+            }
+
+            .row {
+                display: block;
+            }
+
+            .card {
+                margin-bottom: 200px;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1366px ) {
+            .container {
+                display: block;
+                max-width: 90%;
+            }
+
+            .row {
+                display: block;
+            }
+
+            .card img {
+                width: 250px;
+            }
+
+            .card h4 {
+                font-size: 20px;
+                margin-top: 100px;
+                display: inline-block;
+                color: rgb(255, 255, 255);
+                -webkit-text-stroke: 0.5px black;
+            }
+
+            .card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+
+            .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+        max-width: 600px;
+        margin: 0 auto;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg"> 
+            <div class="container">
+                <h1>LOJA GAMES POINT</h1>
+            <div class="container">
+                
+            </div>
+            </div>
+            
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+
+            <div class="container">
+                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="https://www.cyberpunk.net/build/images/pre-order/buy-b/keyart-ue-pt-br@2x-cd66fd0d.jpg">
+                            <div class="carousel-caption">
+                                <h2>CYBERPUNK 2077</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="https://images7.alphacoders.com/749/thumb-1920-749807.png">
+                            <div class="carousel-caption">
+                                <h2>RED DEAD REDEMPTION 2</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="https://cdn.ome.lt/4jyDcOwo1BH0TAfYfSsTqKoJflY=/1200x630/smart/extras/conteudos/Elden_Ring_imagem_principal_sajsCYx.jpg">
+                            <div class="carousel-caption">
+                                <h2>ELDEN RING</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container conteudo">
+                <h2>Bem vindos a loja GAMES POINT</h2>
+            <p>Na GAMES POINT, somos apaixonados por jogos e dedicados a oferecer a melhor experiência para todos os tipos de gamers. Desde os títulos mais recentes e esperados até os clássicos inesquecíveis, nossa loja é um verdadeiro paraíso para os entusiastas dos jogos.
+                Aqui, você encontrará uma vasta seleção de jogos para todas as plataformas: PlayStation, Xbox, Nintendo Switch, PC e muito mais. Além disso, oferecemos uma ampla gama de acessórios e periféricos, garantindo que você tenha tudo o que precisa para aprimorar seu desempenho e imersão.
+                Nossa missão é proporcionar momentos de diversão e aventura, conectando pessoas através do incrível mundo dos games. Seja você um jogador casual, um competitivo de eSports ou um colecionador dedicado, a GAMES POINT é o lugar ideal para encontrar aquilo que você procura.
+                Venha nos visitar e descubra um universo de possibilidades. Na GAMES POINT, a diversão é garantida!
+                </p>
+                
+                <img src="https://i.pinimg.com/564x/fa/66/61/fa6661e4cd0729a879fe738c04c19cc9.jpg" alt="Uma loja de jogos">
+            </div>
+        </section>
+        <section id="produtos">
+            <h1>Produtos</h1>
+            <div class="row">
+                <div class="col-sm-1 ">
+                    <div class="card text-bg-dark">
+                        <img src="https://www.afnetgames.com.br/produtos/cyberps4380x300.jpg" />
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">CYBERPUNK 2077</h4>
+                            <h5 class="card-subtitle"></h5>
+                            <pa class="card-text"></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                </div> 
+                </div>
+                <div class="col-sm-1 ">
+                    <div class="card text-bg-dark">
+                        <img src="https://m.media-amazon.com/images/I/71XrxGqPosL._AC_UF1000,1000_QL80_.jpg" />
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">RED DEAD REDEMPTION 2</h4>
+                            <h5 class="card-subtitle"></h5>
+                            <pa class="card-text"></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                </div> 
+                </div>
+                <div class="col-sm-1 ">
+                    <div class="card text-bg-dark">
+                        <img src="https://m.media-amazon.com/images/I/61xj58FOB+L._AC_UF1000,1000_QL80_.jpg" />
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">ELDEN RING</h4>
+                            <h5 class="card-subtitle"></h5>
+                            <pa class="card-text"></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                </div> 
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
